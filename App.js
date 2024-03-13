@@ -6,29 +6,15 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import LoginScreen from './components/LoginScreen';
 import SignupScreen from './components/SignupScreen';
-
 import HomeScreen from './components/HomeScreen'; // assuming HomeScreen.js is in the same directory
 import SeriesScreen from './components/SeriesScreen';
-
-import MeetScreen from './components/MeetScreen';
 import { KeyboardAwareView } from 'react-native-keyboard-aware-view';
 import auth from '@react-native-firebase/auth';
 import firebase from '@react-native-firebase/app';
 import firestore from '@react-native-firebase/firestore';
-import NoteScreen from './components/NotesScreen';
-import AllUsersScreen from './components/AllUsersScreen';
-import SavedNoteScreen from './components/SavedNoteScreen';
-import UserScreen from './components/UserScreen';
 import storage from '@react-native-firebase/storage';
-import ScheduleMeetingScreen from './components/ScheduledMeetingsScreen';
-import CalendarScreen from './components/CalendarScreen';
-import DrivingTestScreen from './components/DrivingTestScreen';
-import DrivingTestForm from './components/DrivingTestForm';
-import ImportContactsScreen from './components/ImportContactsScreen';
-import AddClientScreen from './components/AddClientScreen';
-import NewClientScreen from './components/NewClientScreen';
 import MoviesScreen from './components/MoviesScreen';
-
+import UserScren from './components/UserScreen';
 
 
 
@@ -147,23 +133,9 @@ const App = () => {
       <Stack.Navigator initialRouteName="SIGN IN">
         <Stack.Screen name="SIGN IN" component={LoginScreen} options={{ headerShown: false }} />
         <Stack.Screen name="SIGN UP" component={SignupScreen} options={{ headerShown: false }} />
-       
-        <Stack.Screen name="SavedNote" component={SavedNoteScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="Calendar" component={CalendarScreen}  options={{ headerShown: false }} />
         <Stack.Screen name="MoviesScreen" component={MoviesScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="AddClient" component={AddClientScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="NewClient" component={NewClientScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="ScheduleMeeting" component={ScheduleMeetingScreen}  options={{ headerShown: false }} />
         <Stack.Screen name="UserScreen" component={UserScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="AllUsers" component={AllUsersScreen}  options={{ headerShown: false }} />
-  
-        <Stack.Screen name="Meet" component={MeetScreen}  options={{ headerShown: false }} />
-        <Stack.Screen name="ImportContacts" component={ImportContactsScreen}  options={{ headerShown: false }} />
         <Stack.Screen name="SeriesScreen" component={SeriesScreen}  options={{ headerShown: false }} />
-      
-        <Stack.Screen name="DrivingTestForm" component={DrivingTestForm}  options={{ headerShown: false }} />
-       
-       
         <Stack.Screen name="Home" component={HomeNavigator} options={{ headerShown: false }} />
       </Stack.Navigator>
     </NavigationContainer>
