@@ -134,7 +134,7 @@ const SignupScreen = () => {
        <View style={styles.header}>
         <Text style={styles.headerTitle}>SIGN UP</Text>
       </View>
-      <Text style={styles.greeting}>Welcome to the SkyRocket Movies</Text>
+      <Text style={styles.greeting}>Welcome to FlixPhantom</Text>
       <View style={styles.inputContainer}>
         <Image source={require('../assets/user.png')} style={styles.icon} />
         <TextInput
