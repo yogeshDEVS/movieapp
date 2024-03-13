@@ -115,7 +115,7 @@ const LoginScreen = () => {
       </View>
           <View style={styles.contentContainer}>
           <View style={styles.IntialContainer}>
-      <Text style={styles.greeting}>Welcome to SkyRocket Movies</Text>
+      <Text style={styles.greeting}>Welcome to FlixPhantom</Text>
       <Text style={styles.subheading}>Please sign in with your account</Text>
       </View>
       <Text style={styles.fieldTitle}>Email</Text>
